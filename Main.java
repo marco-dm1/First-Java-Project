@@ -21,5 +21,23 @@ public class Main {
         } else{
             System.out.println("the input is not blue or red!");
         }
+
+        boolean status = true;
+        int i = 0;
+        while(status){
+            i++;
+            System.out.println("Status = true has made the while loop run.");
+            status = false;
+        }
+
+        for(int a = 0; a < 5; a++){
+            System.out.println("Print " + getAnswer());
+        }
+
+    }
+
+    public static String getAnswer(){
+        String answer = "My answer!";
+        return answer;
     }
 }
