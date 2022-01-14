@@ -1,5 +1,6 @@
 package com.company;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Main {
 
@@ -34,10 +35,35 @@ public class Main {
             System.out.println("Print " + getAnswer());
         }
 
+        System.out.println("ArrayGenerator result: " + ArrayGenerator());
+
+        String[] pieces = "These words are split in the array by using the space as the key.".split(" ");
+        System.out.println(pieces[(int)Math.floor(Math.random() * pieces.length)]);
+        System.out.println("abcdefg".charAt(1) + " - " + "hijklmno".length());
     }
 
     public static String getAnswer(){
         String answer = "My answer!";
+        ArrayList<String> list = new ArrayList<>();
+        list.add("My answer 2.0!");
+
+        answer = list.get(0); // Returns "My answer 2.0!"
+        System.out.println("The size of the ArrayList is: " + list.size());
+        list.remove(0); // Removes index 0 from the ArrayList
+        System.out.println(list.contains("My answer 2.0!")); // Returns true/false if it exists in the ArrayList
         return answer;
+    }
+
+    public static double ArrayGenerator(){
+
+        double[] myDoubleArray = new double[3];
+        for(int i = 0; i < 3; i++){
+            double input = Math.random();
+
+            myDoubleArray[i] = Math.random();
+        }
+        double result =  myDoubleArray[(int)Math.floor(Math.random() * 3)];
+        //double result = myDoubleArray[Math.floor(Math.random())];
+        return result;
     }
 }
