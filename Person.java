@@ -2,7 +2,7 @@ package com.company;
 
 public class Person {
     /* Encapsulation refers to the private variables below that are only accessible
-    by methods inside this class. */
+    by non-static methods inside this class. */
     private String name;
     private int age;
 
