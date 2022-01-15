@@ -12,5 +12,8 @@ public class OOP {
 
         // Static method does not rely on a new instance of the Person class being created.
         System.out.println(Person.staticMethodTest());
+
+        // .equals can be used to compare two objects and see if they are equal.
+        System.out.println("Is \"john\" the same as \"twenty\"?: " + john.equals(twenty));
     }
 }
