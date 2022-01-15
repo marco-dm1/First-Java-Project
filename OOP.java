@@ -8,6 +8,7 @@ public class OOP {
 
         // Constructor overloading in use, only the single argument is needed.
         Person john = new Person("John");
+        Person twenty = new Person(20);
 
         // Static method does not rely on a new instance of the Person class being created.
         System.out.println(Person.staticMethodTest());
