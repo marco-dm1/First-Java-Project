@@ -1,0 +1,1 @@
+This repository contains the first Java code that I ever wrote. The code is from me following the University of Helsinki's online Java programming tutorial, and it can be taught to anyone at [this link.](https://java-programming.mooc.fi)
