@@ -15,6 +15,15 @@ public class Person {
         this.age = ageInput;
     }
 
+    /* - Below is an example of constructor overloading which allows
+        the object to have different constructor functions depending
+        on the constructor function's # of parameters.
+     */
+    public Person(String nameInput){
+        this.name = nameInput;
+        this.age = 0;
+    }
+
     public int getAge(){
         return this.age;
     }
