@@ -36,4 +36,13 @@ public class Person {
     public static String staticMethodTest(){
         return "My return string!";
     }
+
+    /*
+        Overrides the default toString (object's hashcode)
+        so that it can return our custom string using the
+        state's variables.
+    */
+    public String toString(){
+        return this.name + " is " + this.age + " year(s) old.";
+    }
 }
